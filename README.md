@@ -73,28 +73,28 @@ CSV format
 The CSV must contain a single header column named exactly UserPrincipalName. Each row
 is one user's sign-in address. Blank rows are ignored.
 
-UserPrincipalName
-jane.doe@yourdomain.com
-john.smith@yourdomain.com
-alex.lee@yourdomain.com
+UserPrincipalName<br/>
+jane.doe@yourdomain.com<br/>
+john.smith@yourdomain.com<br/>
+alex.lee@yourdomain.com<br/>
 
-Parameters 
+Parameters <br/>
 -GroupIdentity - Target mail-enabled security groups. Accepts primary SMTP address, alias, or Display names<br/>
 -CsvPath - Full path to the CSV file, must exist and contain UserPrincipalName column.<br/>
 -LogPath Folder for the log and results file, Default to the working folder. <br/>
 
-Examples
+Examples<br/><br/>
 
-powershell# Standard run
-.\Add-BulkUsersToMailSecurityGroup.ps1 -GroupIdentity "[GroupAlias@yourdomain.com]" -CsvPath "[C:\Temp\users.csv]"
 
-# Dry run — previews changes, makes none
-.\Add-BulkUsersToMailSecurityGroup.ps1 -GroupIdentity "[GroupAlias@yourdomain.com]" -CsvPath "[C:\Temp\users.csv]" -WhatIf
+.\Add-BulkUsersToMailSecurityGroup.ps1 -GroupIdentity "[GroupAlias@yourdomain.com]" -CsvPath "[C:\Temp\users.csv]"<br/>
+
+# Dry run — previews changes, makes none<br/>
+.\Add-BulkUsersToMailSecurityGroup.ps1 -GroupIdentity "[GroupAlias@yourdomain.com]" -CsvPath "[C:\Temp\users.csv]" -WhatIf<br/>
 
 # Custom log location
-.\Add-BulkUsersToMailSecurityGroup.ps1 -GroupIdentity "[GroupAlias@yourdomain.com]" -CsvPath "[C:\Temp\users.csv]" -LogPath "[C:\Temp\Logs]"
+.\Add-BulkUsersToMailSecurityGroup.ps1 -GroupIdentity "[GroupAlias@yourdomain.com]" -CsvPath "[C:\Temp\users.csv]" -LogPath "[C:\Temp\Logs]"<br/>
 
-Output
+Output<br/>
 
 Two timestamped files are written to -LogPath:
 
@@ -125,11 +125,11 @@ CSV format
 Identical to the Add script: a single header column named exactly UserPrincipalName, one
 UPN per row. Blank rows are ignored.
 
-UserPrincipalName
-jane.doe@yourdomain.com
-john.smith@yourdomain.com
+UserPrincipalName<br/>
+jane.doe@yourdomain.com<br/>
+john.smith@yourdomain.com<br/>
 
-Parameters 
+Parameters <br/>
 -GroupIdentity - Target mail-enabled security groups. Accepts primary SMTP address, alias, or Display names<br/>
 -CsvPath - Full path to the CSV file, must exist and contain UserPrincipalName column<br/>
 -LogPath - Folder for the log and results file, Default to the working folder. <br/>
