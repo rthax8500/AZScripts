@@ -79,9 +79,9 @@ john.smith@yourdomain.com
 alex.lee@yourdomain.com
 
 Parameters 
-.\-GroupIdentity - Target mail-enabled security groups. Accepts primary SMTP address, alias, or Display names
-.\-CsvPath - Full path to the CSV file, must exist and contain UserPrincipalName column
-.\-LogPath Folder for the log and results file, Default to the working folder. 
+-GroupIdentity - Target mail-enabled security groups. Accepts primary SMTP address, alias, or Display names<br/>
+-CsvPath - Full path to the CSV file, must exist and contain UserPrincipalName column.<br/>
+-LogPath Folder for the log and results file, Default to the working folder. <br/>
 
 Examples
 
@@ -130,10 +130,10 @@ jane.doe@yourdomain.com
 john.smith@yourdomain.com
 
 Parameters 
-.\-GroupIdentity - Target mail-enabled security groups. Accepts primary SMTP address, alias, or Display names
-.\-CsvPath - Full path to the CSV file, must exist and contain UserPrincipalName column
-.\-LogPath - Folder for the log and results file, Default to the working folder. 
-.\-Force - Skips interactive confirmation prompt. Use with caution. 
+-GroupIdentity - Target mail-enabled security groups. Accepts primary SMTP address, alias, or Display names<br/>
+-CsvPath - Full path to the CSV file, must exist and contain UserPrincipalName column<br/>
+-LogPath - Folder for the log and results file, Default to the working folder. <br/>
+-Force - Skips interactive confirmation prompt. Use with caution. <br/>
 
 Examples
 
