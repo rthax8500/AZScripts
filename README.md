@@ -58,7 +58,7 @@ Connect to the relevant service first, then run the script you need. For example
 
 "Connect-ExchangeOnline -UserPrincipalName "[admin@yourdomain.com]"
 
-".\Get-MailboxSizeReport.ps1 -OutputPath "[C:\Reports\MailboxSizes.csv]"
+.\Get-MailboxSizeReport.ps1 -OutputPath "[C:\Reports\MailboxSizes.csv]"
 
 
 
@@ -79,9 +79,9 @@ john.smith@yourdomain.com
 alex.lee@yourdomain.com
 
 Parameters 
--GroupIdentity - Target mail-enabled security groups. Accepts primary SMTP address, alias, or Display names
--CsvPath - Full path to the CSV file, must exist and contain UserPrincipalName column
--LogPath Folder for the log and results file, Default to the working folder. 
+.\-GroupIdentity - Target mail-enabled security groups. Accepts primary SMTP address, alias, or Display names
+.\-CsvPath - Full path to the CSV file, must exist and contain UserPrincipalName column
+.\-LogPath Folder for the log and results file, Default to the working folder. 
 
 Examples
 
@@ -130,10 +130,10 @@ jane.doe@yourdomain.com
 john.smith@yourdomain.com
 
 Parameters 
--GroupIdentity - Target mail-enabled security groups. Accepts primary SMTP address, alias, or Display names
--CsvPath - Full path to the CSV file, must exist and contain UserPrincipalName column
--LogPath - Folder for the log and results file, Default to the working folder. 
--Force - Skips interactive confirmation prompt. Use with caution. 
+.\-GroupIdentity - Target mail-enabled security groups. Accepts primary SMTP address, alias, or Display names
+.\-CsvPath - Full path to the CSV file, must exist and contain UserPrincipalName column
+.\-LogPath - Folder for the log and results file, Default to the working folder. 
+.\-Force - Skips interactive confirmation prompt. Use with caution. 
 
 Examples
 
